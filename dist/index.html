@@ -20,50 +20,108 @@
             }
         }
     </script>
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <section id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="font-quicksand text-2xl font-bold bg-gradient-to-l from-teal-500 to-teal-800 bg-clip-text text-transparent">
-                    Zidan Zidna
+    <header class="bg-teal-950 absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <div class="px-4">
+                    <a href="#home" class="font-bold py-6 block tect-lg text-teal-200">Zidan Zidna</a>
                 </div>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="font-body text-gray-700 hover:text-purple-600 transition-colors">Home</a>
-                    <a href="#about" class="font-body text-gray-700 hover:text-purple-600 transition-colors">About</a>
-                    <a href="#projects" class="font-body text-gray-700 hover:text-purple-600 transition-colors">Projects</a>
-                    <a href="#contact" class="font-body text-gray-700 hover:text-purple-600 transition-colors">Contact</a>
+                <div class="flex items-center justify-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
+                        <span class="w-[30px] h-[2px] block bg-teal-100"></span>
+                        <span class="w-[30px] h-[2px] my-[5px] block bg-teal-100"></span>
+                        <span class="w-[30px] h-[2px] my-[5 px] block bg-teal-100"></span>
+                    </button>
                 </div>
-                
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
             </div>
         </div>
+    </header>
+
     <!-- HERO SECTION START -->
-    </section>
-    <section id="home" class="pt-36">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full self-center px-4">
-                    <h1 class="font-quicksand">Hi Everyone!, <span class="block font-bold text-teal-600 text-3xl">I'm Zidan Zidna</span></h1>
-                    <h2>Information System Student</h2>
-                    <button class="bg-teal-600 p-2 rounded-full my-4 text-white hover:bg-teal-700 focus:ring focus:ring-slate-900 active:bg-teal-800 transition duration-200">Download CV</button>
+    <section id="home" class="pt-24 pb-20 bg-gradient-to-l from-teal-700 via-teal-400 to-teal-700">
+        <div class="container mx-auto"> 
+            <div class="flex flex-wrap text-center ">
+                <div class="w-full self-center px-4 mb-5 lg:w-1/2">
+                    <h1 class="font-quicksand text-base md:text-2xl text-slate-950">Hi Everyone!, <span class="block font-bold text-teal-950 text-2xl md:text-3xl">I'm Zidan Zidna</span></h1>
+                    <h2 class="font-nunito text-base md:text-2xl text-slate-950">Information System Student</h2>
+                    <button class="bg-teal-900 p-3 rounded-full my-4 text-white hover:bg-teal-300 focus:ring focus:ring-slate-950 active:bg-teal-600 transition duration-200">Download CV</button>
                 </div>
-                <div class="w-full self-end px-4">
-                    <div class="mt-10">
-                        <img src="img/1.jpg" alt="formal" class="w-full">
+                <div class="mx-auto bg-gradient-to-r from-teal-950 via-teal-200 to-teal-950 rounded-3xl self-end lg:bg-gradient-to-r lg:from-teal-200 lg:to-teal-950">
+                    <div class="lg:mt-0 lg:mr-0 p-5">
+                        <img src="img/1.jpg" alt="formal" class="w-64 rounded-lg">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- HERO SECTION END -->
+
+    <!-- ABOUT SECTION START -->
+    <section id="about" class="pt-24 pb-32">
+        <div class="container mx-auto">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="font-quicksand text-4xl md:text-5xl font-bold text-center mb-4">
+                    <span class="gradient-text">About Me</span>
+                </h2>
+                <p class="font-body text-center text-gray-600 mb-16 max-w-2xl mx-auto">
+                    A little bit about who I am and what I do
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8 ">
+                <!-- 1 -->
+                <div class="bg-teal-100 p-8 rounded-3xl hover:scale-105 hover:transition duration-200 hover:bg-teal-500">
+                    <div class="w-16 h-16 bg-[#A16207] rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-12 h-12 text-white" fill="currentColor" stroke="none" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m590.29 428.11c12.543-26.199 25.543-53.203 25.543-100.76.0-58.543-25.191-105.45-72.246-135.62-69.828-44.586-168.78-40.152-226.21-13.398-76.73 35.719-92.953 97.535-94.867 106.1-8.918 27.91 1.1562 59.145 7.957 74.965-49.07 54.414-46.801 72.699-46.047 78.695.74219 6.1484 4.125 11.668 9.2695 15.113 8.543 5.875 18.062 10.172 28.113 12.699l-.40234 16.375v-.003907c-.35156 14.434 3.6133 28.645 11.387 40.809l3.3242 5.2891c-1.3594 31.789 7.3047 82.07 48.465 88.418 19.801 3.0234 50.734-7.0039 83.379-23.074 11.895 27.156 87.465 48.117 143.59 48.117 9.1758.078125 18.344-.61328 27.406-2.0664 37.734-6.4492 44.387-26.652 44.988-38.137.30078-5.8945-1.9141-13.25-6.6016-27.961-6.043-18.996-15.262-47.715-12.691-66.605 3.8438-27.617 12.523-54.344 25.645-78.949zm-37.383 153.26c2.1641 6.1562 3.9805 12.43 5.4414 18.789-.45312 8.1602-12.293 12.09-22.168 13.957-50.383 9.4219-131.64-14.41-143.64-28.969 7.4062-5.0391 18.289-13.551 30.23-22.973h-.003907c22.117-14.254 42.863-30.531 61.969-48.617 5.5664-5.0117 6.0156-13.582 1.0078-19.145-5.0078-5.5664-13.578-6.0195-19.145-1.0078-13.453 11.133-38.594 31.84-60.004 48.82-44.738 29.066-95.422 52.848-118.14 49.219-30.23-4.6367-26.551-64.891-26.5-65.496l.30078-4.2812-7.8594-12.191c-5.0352-7.8867-7.5977-17.098-7.3555-26.449l.65625-27.91.45312-10.531h-.003906c.050781-.9375-.3125-1.8477-.98828-2.4961-.67578-.64844-1.6016-.96875-2.5352-.87891l-10.48.80469c-8.6836-.625-17.031-3.625-24.133-8.6641 1.2578-6.9531 12.242-26.602 39.5-56.828v-.003907c3.2344-3.5898 5.3672-8.0352 6.1445-12.805.77734-4.7734.16406-9.6641-1.7617-14.098-4.4336-10.48-13.957-37.129-7.0039-57.988l.40234-1.5625c.50391-2.3164 12.293-56.828 80.609-88.672 51.34-23.879 139.45-27.91 201.52 11.688 40.305 25.594 60.457 63.934 60.457 114.01.0 41.766-10.68 63.984-23.023 89.68-14.289 27.039-23.754 56.367-27.961 86.656-2.8711 24.84 6.8008 55.57 14.008 77.941z"/><path d="m482.98 274.05c-3.6719-3.6602-9.6172-3.6484-13.277.023437-3.6562 3.6758-3.6445 9.6172.027343 13.277l33.805 33.754-33.805 33.805c-3.6328 3.6719-3.6328 9.582.0 13.25 3.668 3.6328 9.5781 3.6328 13.25.0l40.305-40.305c3.6445-3.8789 3.6445-9.9258.0-13.805z"/><path d="m372.79 274.05c-3.7031-3.4062-9.3984-3.4062-13.098.0l-40.305 40.305c-1.8516 1.8203-2.8867 4.3086-2.875 6.9023.039063 2.582 1.0664 5.0547 2.875 6.9023l40.305 40.305c3.6562 3.6719 9.6016 3.6836 13.273.023437 3.6719-3.6562 3.6836-9.6016.027344-13.273l-33.805-33.805 33.805-33.754v-.003906c1.8125-1.8125 2.8164-4.2812 2.7773-6.8438-.039063-2.5625-1.1133-5-2.9805-6.7578z"/><path d="m444.74 252.73c-4.8984-1.668-10.219.94922-11.891 5.8438l-40.91 119.3c-.77344 2.3008-.60938 4.8164.45312 7 1.1016 2.2305 3.0391 3.9297 5.3906 4.7383.97266.33984 1.9922.51172 3.0234.50391 4.0156.011719 7.5859-2.543 8.8672-6.3477l40.707-119.15c1.6875-4.8398-.82812-10.137-5.6406-11.891z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-4 text-gray-800">Development</h3>
+                    <p class="font-body text-gray-600 leading-relaxed">
+                        Build a responsive and aesthetics web applications with modern technologies.
+                    </p>
+                </div>
+                
+                <!-- 2 -->
+                <div class="bg-teal-100 p-8 rounded-3xl hover:scale-105 hover:transition duration-200 hover:bg-teal-500">
+                    <div class="w-16 h-16 bg-[#34D399] rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-12 h-12 text-white" fill="currentColor" stroke="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.73 10.456l.685-.742A2.454 2.454.0 0123 11.433c0 2.744-3.938 5.032-7.947 5.941l1.396-1.434c3.007-1.002 5.55-2.746 5.55-4.507a1.595 1.595.0 00-.268-.977zm-19.53.25c0-3.745 5.101-6.434 9.664-6.505h.16c2.01.0 2.323.337 2.539.57a1.266 1.266.0 01.331.918 2.856 2.856.0 01-.142.824 3.555 3.555.0 00-.17.991 1.863 1.863.0 001.632 1.882l.862-.84c-.873-.102-1.494-.342-1.494-1.042.0-.548.312-.997.312-1.815a2.27 2.27.0 00-.606-1.607c-.345-.372-.817-.88-3.264-.88h-.16C6.828 3.28 1.2 6.237 1.2 10.704c0 3.164 2.758 5.244 5.785 6.292a3.098 3.098.0 011.147-.683c-3.038-.84-5.932-2.76-5.932-5.609zM12 7.5A1.5 1.5.0 1110.5 6 1.5 1.5.0 0112 7.5zm-1 0a.5.5.0 10-.5.5.5.5.0 00.5-.5zM6.5 11A1.5 1.5.0 118 9.5 1.5 1.5.0 016.5 11zM7 9.5a.5.5.0 10-.5.5.5.5.0 00.5-.5zm3 4A1.5 1.5.0 118.5 12a1.5 1.5.0 011.5 1.5zm-1 0a.5.5.0 10-.5.5.5.5.0 00.5-.5zm13.11-7.483L18.4 9.35l-7.45 7.25 1.4 1.4 7.25-7.449 3.383-3.661a.626.626.0 00-.873-.873zM9.368 17.619l1.439 1.738a2.94 2.94.0 01-1.63 2.234 3.92 3.92.0 01-1.626.359 3.598 3.598.0 01-1.733-.427s1.8-.968 1.809-2.464c.006-1.38 1.451-1.44 1.703-1.44zm.35 1.99-.78-.94a.379.379.0 00-.311.395 3.191 3.191.0 01-.633 1.85 3.042 3.042.0 00.772-.234 1.823 1.823.0 00.952-1.07z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-4 text-gray-800">Design</h3>
+                    <p class="font-body text-gray-600 leading-relaxed">
+                        Create an unique and intuitive interfaces. UI/UX design with attention to details.
+                    </p>
+                </div>
+                
+                <!-- 3 -->
+                <div class="bg-teal-100 p-8 rounded-3xl hover:scale-105 hover:transition duration-200 hover:bg-teal-500">
+                    <div class="w-16 h-16 bg-[#1F2937] rounded-2xl flex items-center justify-center mb-6">
+                       <svg class="w-12 h-12 text-white" fill="currentColor" stroke="none" viewBox="144 144 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m441.98 572.13h-83.969c-6.2969.0-10.496-4.1992-10.496-10.496v-8.3984c0-39.887-14.695-79.77-39.887-111.26-17.844-22.043-28.34-49.332-27.289-76.621.0-62.977 51.43-117.55 115.46-119.66 32.539-1.0508 64.027 10.496 88.168 33.586s36.734 53.531 36.734 86.066c0 27.289-9.4453 53.531-26.238 74.523-27.289 34.637-41.984 73.473-41.984 113.36v8.3984c0 5.2539-5.25 10.5-10.496 10.5zm-73.473-20.992h62.977c1.0508-43.035 16.793-86.066 46.184-123.85 13.645-17.844 20.992-38.836 20.992-61.926.0-27.289-10.496-52.48-30.438-71.371-19.941-18.895-45.133-28.34-72.422-27.289-52.48 2.0977-94.465 46.184-95.516 98.664.0 23.09 8.3984 46.184 23.09 64.027 29.387 33.582 45.133 76.613 45.133 121.75z"/><path d="m441.98 606.77h-83.969c-6.2969.0-10.496-4.1992-10.496-10.496.0-6.2969 4.1992-10.496 10.496-10.496h83.969c6.2969.0 10.496 4.1992 10.496 10.496.0 6.2969-5.25 10.496-10.496 10.496z"/><path d="m426.24 646.66h-52.48c-6.2969.0-10.496-4.1992-10.496-10.496s4.1992-10.496 10.496-10.496h52.48c6.2969.0 10.496 4.1992 10.496 10.496s-5.2461 10.496-10.496 10.496z"/><path d="m4e2 210.02c-6.2969.0-10.496-4.1992-10.496-10.496v-35.688c0-6.2969 4.1992-10.496 10.496-10.496s10.496 4.1992 10.496 10.496v35.688c0 6.2969-4.1992 10.496-10.496 10.496z"/><path d="m504.96 254.11c-3.1484.0-5.2461-1.0508-7.3477-3.1484-4.1992-4.1992-4.1992-10.496.0-14.695l25.191-25.191c4.1992-4.1992 10.496-4.1992 14.695.0 4.1992 4.1992 4.1992 10.496.0 14.695l-25.191 25.191c-2.0977 2.0977-4.1953 3.1484-7.3477 3.1484z"/><path d="m584.73 359.06h-35.688c-6.2969.0-10.496-4.1992-10.496-10.496s4.1992-10.496 10.496-10.496h35.688c6.2969.0 10.496 4.1992 10.496 10.496.0 6.3008-4.1992 10.496-10.496 10.496z"/><path d="m250.95 359.06h-35.684c-6.2969.0-10.496-4.1992-10.496-10.496s4.1992-10.496 10.496-10.496h35.688c6.2969.0 10.496 4.1992 10.496 10.496-.003906 6.3008-4.1992 10.496-10.5 10.496z"/><path d="m295.04 254.11c-3.1484.0-5.2461-1.0508-7.3477-3.1484l-25.191-25.191c-4.1992-4.1992-4.1992-10.496.0-14.695 4.1992-4.1992 10.496-4.1992 14.695.0l25.191 25.191c4.1992 4.1992 4.1992 10.496.0 14.695-2.1016 2.0977-5.25 3.1484-7.3477 3.1484z"/>
+                    </svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-4 text-gray-800">Innovation</h3>
+                    <p class="font-body text-gray-600 leading-relaxed">
+                        Enjoys exploring new technologies and creative solutions to solve a complex problems.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+    
+    <!-- PROJECTS SECTION START -->
+    <section>
+        <div class="container mx-auto">
+            <div class="flex flex-wrap ">
+
+            </div>
+        </div>
+    </section>
+    <!-- PROJECTS SECTION END -->
+    <script src="disc/script.js"></script>
 </body>
 </html>
