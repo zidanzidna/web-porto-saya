@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-Family: 'quicksand', 'nunito';
+.hamburger-active > span:nth-child(1) {
+    @apply origin-top-left rotate-45;
 }
 
-hamburger-active {
-    
+@font-face {
+  font-family: 'Varsity Team';
+  src: url('./font/varsity_regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }

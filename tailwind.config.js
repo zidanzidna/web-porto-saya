@@ -6,7 +6,11 @@ module.exports = {
     "./*.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        varsity: ['Varsity Team', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
