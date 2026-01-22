@@ -1,5 +1,7 @@
-const hamburger = document.querySelector('hamburger');
+// Di component
+import localFont from './font/varsity_regular.ttf'
 
-hamburger.addEventListener('click', function ( ){
-    hamburger.classList.toggle('hamburger-active');
-});
+const varsity = localFont({
+  src: './fonts/varsity_regular.ttf',
+  variable: '--font-varsity',
+})
