@@ -8,7 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        varsity: ['Varsity Team', 'sans-serif'],
+        varsity: ['var(--font-varsity)'],
+        heading: ['var(--font-heading)'],
+        body: ['var(--font-body)'],
       },
     },
   },
