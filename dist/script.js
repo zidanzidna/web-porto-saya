@@ -6,7 +6,7 @@ const varsity = localFont({
   display: 'swap',
 })
 
-const pressStart = localFont({
+const PressStart2P = localFont({
   src: './font/PressStart2P-Regular.ttf',
   variable: '--font-heading',
   display: 'swap',
@@ -18,4 +18,10 @@ const vt323 = localFont({
   display: 'swap',
 })
 
-export { varsity, pressStart, vt323 }
+const inter = localFont({
+  src: './fonts/Inter-VariableFont.ttf',
+  variable: '--font-inter',
+  display: 'swap',
+})
+
+export { varsity, PressStart2P, vt323, inter }
